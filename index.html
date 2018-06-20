@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Libreria UCAB</title>
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="estilos/font-awesome.min.css">
+    <link rel="icon" href="img/cabecera/favicon (1).ico" type="image/x-icon">
 </head>
 <body>
     <div class="contenedor">
@@ -15,14 +17,11 @@
             <div class="usuario">
                 <nav class="navegacion">
                   <a href="#"><i class="user fa fa-user"></i>Iniciar sesion</a>
-                  <a href="">Registrate</a>
+                  <a href="#">Registrate</a>
                 </nav>
                 <div class="redes-sociales">
                   <nav>
-                      <a href=""><i class="fa fa-telegram"></i></a>
-                      <a href=""><i class="fa fa-instagram"></i></a>
-                      <a href=""><i class="fa fa-facebook"></i></a>
-                      <a href=""><i class="fa fa-twitter"></i></a>
+                      <a href="">Mundo Papel</a>
                   </nav>
                 </div>
             </div>
@@ -37,18 +36,21 @@
                     <li><a href="#">Tienda</a>
                       <ul>
                           <li><a href="">Mi cuenta</a></li>
-                          <li><a href="">Mi lista</a></li>
-                          <li><a href="">Mi carrito(En construccion)</a></li>
-                          <li><a href="">Donde estamos ubicados?</a></li>
+                          <li><a href="#mapita">Donde estamos ubicados?</a></li>
                       </ul>
                     </li>
                     <li><a href="">Escolares</a></li>
-                    <li><a href="">Papeleria</a></li>
+                    <li>
+                     <a href="" class="carrito"><i class="fa fa-cart-plus"></i></a>
+                    </li>
                     <li>
                       <div class="buscador">
-                        <input type="text" placeholder="Buscar...">
-                      </div> 
+                        <input type="text" placeholder="Buscar...">  
+                    </div>    
                     </li>
+                    <!--<li>
+                      <a href="" class="carrito"><i class="fa fa-cart-plus"></i></a>
+                    </li>-->
                 </ul>
             </nav>
         </div>
@@ -62,7 +64,7 @@
         <section class="seccion">
             <article class="articulo">
                 <div class="galeria">
-                    <a href=""><img src="img/imagenes/bolso.jpg"></a>
+                    <a href="producto.html"><img src="img/imagenes/bolso.jpg"></a>
                 </div>
                 <div class="texto">
                     <h3>Bolso: F&M</h3>
@@ -76,15 +78,6 @@
                 <div class="texto">
                     <h3>Archivadores: F&M</h3>
                     <p>BsF 5.000,00</p>
-                </div>
-            </article>
-            <article class="articulo">
-                <div class="galeria">
-                    <a href=""><img src="img/imagenes/BORRADORES.jpg"></a>
-                </div>
-                <div class="texto">
-                    <h3>Borrador: F&M</h3>
-                    <p>BsF 500,00</p>
                 </div>
             </article>
             <article class="articulo">
@@ -116,15 +109,6 @@
             </article>
             <article class="articulo">
                 <div class="galeria">
-                    <a href=""><img src="img/imagenes/Papeleria.jpg"></a>
-                </div>
-                <div class="texto">
-                    <h3>Papeleria: F&M</h3>
-                    <p>BsF 8.000,00</p>
-                </div>
-            </article>
-            <article class="articulo">
-                <div class="galeria">
                     <a href=""><img src="img/imagenes/plastico.jpg"></a>
                 </div>
                 <div class="texto">
@@ -139,6 +123,24 @@
                 <div class="texto">
                     <h3>Sacapuntas: F&M</h3>
                     <p>BsF 1.500,00</p>
+                </div>
+            </article>
+            <article class="articulo">
+                <div class="galeria">
+                    <a href=""><img src="img/imagenes/BORRADORES.jpg"></a>
+                </div>
+                <div class="texto">
+                    <h3>Borrador: F&M</h3>
+                    <p>BsF 500,00</p>
+                </div>
+            </article>
+            <article class="articulo">
+                <div class="galeria">
+                    <a href=""><img src="img/imagenes/Papeleria.jpg"></a>
+                </div>
+                <div class="texto">
+                    <h3>Papeleria: F&M</h3>
+                    <p>BsF 8.000,00</p>
                 </div>
             </article>
         </section>
@@ -167,7 +169,7 @@
         
         <!--ubicacion-->
         <div class="zona">
-         <h2>Encuentranos en:</h2>
+         <h2 id="mapita">Encuentranos en:</h2>
           <section class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.0441112080885!2d-66.85724078583023!3d10.497188967157568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a59aa12888313%3A0x2e384402274f57c5!2sMundo+Papel+2001!5e0!3m2!1ses-419!2sve!4v1528680476416" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
           </section>
@@ -182,7 +184,7 @@
               </div>
               <div class="direccion">
                   <h3>Direccion</h3>
-                  <P class="calle">Direccion: CALLE STA. TERESA DE JESÚS <br> ENTRE AV. BLANDÍN Y ÁVILA, CHACAO.</P>
+                  <P class="calle">Direccion: Calle Sta. Teresa de Jesus <br> Entre Av. Blandin y Ávila, Chacao.</P>
                   <p class="telefono">Telefonos: 2644034 / 2643410</p>
                   <p class="correo">Correo: mundopapel2001 [arroba] gmail.com</p>
               </div>
@@ -192,7 +194,18 @@
         <!--Footer-->
         <footer class="pie">
             <div class="informacion">
-                <h2>Siguenos</h2>
+                <h2>Libreria</h2>
+                <p>RIF <span> J-30787201-2 </span></p>
+                <hr>
+            </div>
+            <div class="siguenos">
+                <nav class="redes-sociales">
+                    <a href=""><i class="fa fa-envelope-square"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                </nav>
+                <p class="derechos">2018<span> &copy;</span> Libreria IHC</p>
             </div>
         </footer>
         <!--fin del contenedor-->
